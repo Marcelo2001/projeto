@@ -31,8 +31,11 @@
 	function listaProfessores(){
 		$professores = array();
 
+		//abre o arquivo e retorna seu conteudo em um array
 		$dados = file("dados/professores.csv");
-		foreach ($dados as $linha) {
+
+		foreach ($dados as $posicao=>$linha) {
+			if($posicao != 0){
 			$colunas = explode(",",$linha);
 
 			$professor = array();
@@ -43,39 +46,9 @@
 
 			$professores[] = $professor;
 		}
-
+	}
 
 		return $professores;
 	}
 
 	//testando a funcao
-	$lista = listaProfessores();
-	print_r($lista);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

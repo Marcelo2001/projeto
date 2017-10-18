@@ -9,7 +9,7 @@ foreach ($lista as $professor) {
 
 	<div class="lista-professor">
 		<img src="<?=$professor['foto']?>">
-		<h2><a href="detalhaprofessor.php?cod=<?=$professor['siape']?>"></a></h2>		
+		<h2><a href="detalhaprofessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome'] ?></a></h2>		
 	</div>
 <?php
 }

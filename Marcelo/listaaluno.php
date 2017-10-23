@@ -6,14 +6,14 @@ include("cabecalho.php");
 	<section class="lista">
 		<ul>
 <?php
-include("professores.php");
+include("alunos.php");
 
-$lista = listaprofessores();
+$lista = listaAlunos();
 
-foreach ($lista as $professor) {
+foreach ($lista as $aluno) {
 ?>
-		<li><a href="detalhaprofessor.php?cod=<?=$professor['siape']?>"><?=$professor['nome']?></a></li>		
-	
+
+		<li><a href="detalhaalunos.php?cod=<?=$aluno['matricula']?>"><?=$aluno['nome'] ?></a></li>		
 	<?php
 }
 ?>

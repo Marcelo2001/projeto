@@ -3,7 +3,7 @@
 //ARQUIVO COM FUNCOES PARA MANIPULAÇÃO DOS DADOS DE PROFESSORES
 
 	
-//////////// B U S C A S  P R O F E S S O R ///////////
+/////////////// B U S C A S  P R O F E S S O R ///////////////
 
 	function buscaProfessor($codigo){
 		$professor = array();

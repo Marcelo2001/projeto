@@ -1,9 +1,7 @@
 <?php
 	include("cabecalho.php");
 	include("alunos.php");
-
 	$matricula = $_GET['cod'];
-
 	$alunos = buscaAluno($matricula);
 ?>
 

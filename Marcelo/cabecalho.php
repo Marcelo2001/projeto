@@ -2,8 +2,6 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/completo.css">
-	<link rel="stylesheet" type="text/css" href="css/geral.css">
-	<link rel="stylesheet" type="text/css" href="css/profs.css">
 	<title>Todos professores</title>
 	<meta charset="utf-8">
 </head>

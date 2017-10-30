@@ -50,5 +50,3 @@
 
 		return $professores;
 	}
-
-	//testando a funcao

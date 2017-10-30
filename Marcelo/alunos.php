@@ -41,6 +41,30 @@
 	}
 		return $alunos;
 	}
-	//testando a funcao
+	
+function listaAlunosTurma($turma){
+	$alunos = array();
+
+	$dados = file("dados/alunos.csv");
+	foreach ($dados as $posicao => $linha) {
+		if ($posicao != 0) {
+			$colunas = explode(",", $linha);
+			if ($colunas[2] == $turma){
+				$aluno = array();
+				$aluno['matricula'] = $colunas[0];
+				$aluno['nome']  	= $colunas[1];
+				$aluno['turma'] 	= $colunas[2];
+				$aluno['email'] 	= $colunas[3];
+				$aluno['foto']  	= $colunas[4];
+
+				$alunos[] = $aluno;			}
+		}
+	}
+	return $alunos;
+
+}
+
+$lista = listaAlunosTurma('1info1');
+print_r($lista);
 
 ?>

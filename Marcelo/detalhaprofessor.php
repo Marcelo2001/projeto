@@ -1,17 +1,32 @@
 <?php
-	include("cabecalho.php");
-	include("professores.php");
 
-	$siape = $_GET['cod'];
 
-	$professor = buscaprofessor($siape);
-?>
+   include("cabecalho.php");
+   include("professores.php");
 
-<div class="detalhes-professor">
-	<img src="<?=$professor['foto']?>" >
-	<p><?=$professor['nome']?></p>
-	<p><?=$professor['email']?></p>
-</div>
+   $siape = $_GET['cod'];
+
+   $professor=buscaProfessor($siape);
+  ?>
+  <!-- conteudo principal -->
+  <article class="coluna80">
+    <section class="foto">
+      <img src="<?=$professor['foto']?>">
+    </section>
+
+    <section class="dados">
+      <p>Nome: <?=$professor['nome']?></p>
+      <p>Email: <?=$professor['email']?></p>
+      <p>Disciplinas: Fundamento de Informática</p>
+      <p>Sala: B7</p>
+
+    </section>
+  </article>
+
+
 <?php
-	include("rodape.php");
+
+   include("rodape.php");
+
+
 ?>
